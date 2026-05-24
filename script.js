@@ -1,4 +1,4 @@
-const apiKey = "ced3d80b106f4f84f7c7f34ff711fc91";
+const apiKey = API_KEY; // loaded from config.js  
 const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?";
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?";
 
@@ -98,7 +98,12 @@ async function fetchWeather(city) {
     document.getElementById("temperature").innerText = "";
     document.getElementById("humidity").innerText = "";
     document.getElementById("wind").innerText = "";
-    document.getElementById("weather-icon").style.display = "none"; 
+
+const icon = iconMap[data.weather[0].main] || "sun.png";
+const weatherIcon = document.getElementById("weather-icon");
+weatherIcon.src = `images/${icon}`;
+weatherIcon.style.display = "block";
+
     document.getElementById("forecast").innerHTML = "";
     setBackground("");
   } finally {

@@ -24,7 +24,7 @@ A simple weather application that uses the OpenWeatherMap API to show real-time 
 1. Clone repo:
 
 ```bash
-git clone YOUR_REPO_LINK
+git clone https://github.com/abdulhaseeb108/Weather
 ```
 
 2. Open folder:

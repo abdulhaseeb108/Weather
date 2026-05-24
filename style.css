@@ -13,8 +13,8 @@ body {
   min-height: 100vh;
   padding: 20px;
   transition: background 0.5s ease;
+  background: linear-gradient(to right, #4facfe, #00f2fe); 
 }
-
 
 body.clear {
   background: linear-gradient(to right, #4facfe, #00f2fe); 
@@ -29,8 +29,8 @@ body.rain {
 }
 
 body.snow {
-  background: linear-gradient(to right, #e6dada, #274046); 
-  color: #1e293b; 
+  background: linear-gradient(to right, #546e8a, #274046); 
+  color: #fff; 
 }
 
 body.drizzle {
@@ -42,8 +42,8 @@ body.thunderstorm {
 }
 
 body.mist, body.haze {
-  background: linear-gradient(to right, #c9d6ff, #e2e2e2); 
-  color: #1e293b;
+  background: linear-gradient(to right, #6b7fa3, #9aa5b4); 
+  color: #fff; 
 }
 
 .container {
@@ -68,7 +68,7 @@ body.mist, body.haze {
   font-size: 18px;
   border-radius: 8px 0 0 8px;
   border: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
   outline: none;
 }
@@ -78,7 +78,7 @@ body.mist, body.haze {
 }
 
 .search-bar button {
-  background: #3b82f6; /* Blue */
+  background: #3b82f6;
   border: none;
   padding: 12px;
   border-radius: 0 8px 8px 0;
@@ -87,7 +87,7 @@ body.mist, body.haze {
 }
 
 .search-bar button:hover {
-  background: #2563eb; /* Darker blue */
+  background: #2563eb;
 }
 
 .search-bar img {
@@ -97,7 +97,7 @@ body.mist, body.haze {
 
 .error {
   text-align: center;
-  color: #ef4444; /* Red */
+  color: #fca5a5; 
   margin-bottom: 20px;
   font-size: 16px;
   animation: pulse 2s infinite;
@@ -145,11 +145,13 @@ body.mist, body.haze {
 #temperature {
   font-size: 48px;
   font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3); 
 }
 
 #city-name {
   font-size: 32px;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3); 
 }
 
 .weather-details {
