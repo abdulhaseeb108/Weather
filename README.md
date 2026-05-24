@@ -38,14 +38,13 @@ cd weather-app
 ## API Used
 
 OpenWeatherMap API:
-https://openweathermap.org/api
+ced3d80b106f4f84f7c7f34ff711fc91
 
 ## Setup
 
 Replace API key in `script.js`:
 
 ```js
-const apiKey = "YOUR_API_KEY_HERE";
 ```
 
 ## Known Issues
